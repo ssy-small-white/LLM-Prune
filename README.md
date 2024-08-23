@@ -187,6 +187,11 @@ Content:
                          <img width="80%" alt="image" src="Pictures/Wanda/Wanda experiment result 2.jpg">         
                          </p>
                          perplexity results and zero-shot results
+                         <p align="center">
+                         <img width="80%" alt="image" src="Pictures/Wanda/Wanda experiment result 3.jpg">       
+                         <img width="80%" alt="image" src="Pictures/Wanda/Wanda experiment result 4.jpg">         
+                         </p>
+			 zero-shot results with more details
     - Summary: Wanda simplify the SparseGPT with approximation thus just rely on weight and activation to compute the pruning metric.(The author had demonstrated 
       that we can somehow transform the pruning metric formula of Sparsegpt into that of Wanda)
 

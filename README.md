@@ -196,6 +196,15 @@ Content:
                          <img width="70%" alt="image" src="Pictures/Wanda/Wanda experiment result 5.jpg">         
                          </p>
 			 zero-shot results with more details
+                         <p align="center">
+                         <img width="70%" alt="image" src="Pictures/Wanda/Wanda experiment result 6.jpg">       
+                         </p>
+			 As for pruning time, Specifically, we measure the accumulated time for computing the pruning metric at each layer (excluding the forward 
+                         pass process shared by both methods) on NVIDIA A6000 GPUs(table 4).
+		         As for inference speedup, The authors evaluate the inference speedup for structured 2:4 sparsity on NVIDIA A6000 GPUs(for table 5). We 
+                         perform simulation analysis using the high-performance GEMM kernel in NVIDIA CUTLASS library(also table 5). For end to end latency, we 
+                         observe a speedup of 1.24× on LLaMA-7B (251ms as compared to 312ms).
+                  
                          
     - Summary: Wanda simplify the SparseGPT with approximation thus just rely on weight and activation to compute the pruning metric.(The author had demonstrated 
       that we can somehow transform the pruning metric formula of Sparsegpt into that of Wanda)

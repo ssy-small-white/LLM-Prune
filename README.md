@@ -464,6 +464,16 @@ There are two "Shortened LLaMa", this is a mistake of the original author!
     - Summary: For post-training pruning method, this paper proposed two innovative and plug-and-play components, which is Relative Importance and Activations (RIA) and Channel Permutation (CP). (1) RIA re-evaluate the importance of each weight element based on all connections that originate from input and output. (2) CP aims to preserve important weights under N:M sparsity, which yields better N:M structures by permuting the input channels of weight.
     - Comment: I have thoroughly reviewed the source code and can affirm its effectiveness. The code is indeed of superior quality, demonstrating excellent standards in development. 
 
+- One-shot sensitivity-aware mixed sparsity pruning for large language models
+    - Label:
+    - Authors:
+    - Link:
+    - Code:
+    - Pub:
+    - Summary:
+    - Experiments:
+    - Comment:   
+
 - COPAL: Continual Pruning in Large Language Generative Models
     - Label: <img src=https://img.shields.io/badge/unstructured-turquoise.svg ><img src=https://img.shields.io/badge/semi_structured-brightgreen.svg >
     - Authors: Srikanth Malla, Joon Hee Choi, Chiho Choi
@@ -505,4 +515,8 @@ There are two "Shortened LLaMa", this is a mistake of the original author!
     - Label: <img src=https://img.shields.io/badge/structured-blue.svg >
     - Authors: Deyuan Liu, Zhanyue Qin, Hairu Wang, Zhao Yang, Zecheng Wang, Fangying Rong, Qingbin Liu, Yanchao Hao, Xi Chen, Cunhang Fan, Zhao Lv, Zhiying Tu, Dianhui Chu, Dianbo Sui
     - Link: https://arxiv.org/pdf/2406.16330
-    - Code: 
+    - Code:
+    - Summary:
+    - Main method:
+    - Experiments:
+    - Comment: 

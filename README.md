@@ -204,6 +204,13 @@ Content:
 		         As for inference speedup, The authors evaluate the inference speedup for structured 2:4 sparsity on NVIDIA A6000 GPUs(for table 5). We 
                          perform simulation analysis using the high-performance GEMM kernel in NVIDIA CUTLASS library(also table 5). For end to end latency, we 
                          observe a speedup of 1.24× on LLaMA-7B (251ms as compared to 312ms).
+                         <p align="center">
+                         <img width="70%" alt="image" src="Pictures/Wanda/Wanda experiment result 7.jpg">
+                         <img width="70%" alt="image" src="Pictures/Wanda/Wanda experiment result 8.jpg">
+			 <img width="70%" alt="image" src="Pictures/Wanda/Wanda experiment result 9.jpg">
+                         </p>
+			 Pruning perplexity results of other kinds of LLMs
+
                   
                          
     - Summary: Wanda simplify the SparseGPT with approximation thus just rely on weight and activation to compute the pruning metric.(The author had demonstrated 

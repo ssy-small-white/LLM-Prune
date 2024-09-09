@@ -307,15 +307,16 @@ Content:
   - Summary: 
   - Method:
   - Experiment results:
-  - Comment:
+  - Comment: This paper belongs to the same category of Wanda-namely using importance metric without further retraining. It proposes a new component, gradient, in 
+             importance metric, which seems to be the first time in LLM pruning. 
 
 
 - The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction
   - Label: <img src=https://img.shields.io/badge/structured-blue.svg >
   - Author: Pratyusha Sharma, Jordan T. Ash, Dipendra Misra 
   - Link: https://arxiv.org/pdf/2312.13558.pdf 
-  - Code: Not available 
-  - Pub: ICLR Under review 
+  - Code: https://github.com/pratyushasharma/laser
+  - Pub: ICLR 
   - Summary: This paper is not related to Pruning but to Low-rank decomposition. They find that removing higher-order component of weight matrics in MLP and attention can significantly improve the performance of LLMs.
 
 - PERP: Rethinking the Prune-Retrain Paradigm in the Era of LLMs 
@@ -488,6 +489,8 @@ There are two "Shortened LLaMa", this is a mistake of the original author!
     - Code: Not Available
     - Pub: ICML2024
     - Summary: This paper introduces COPAL, an algorithm for continual pruning of large language models under a model adaptation setting. The approach utilizes sensitivity analysis to guide the pruning process, enhancing model adaptability and computational efficiency without the need for retraining. The empirical evaluation demonstrates COPAL's effectiveness in maintaining performance across various datasets and model sizes.
+    - Comment: For the first time(as far as I know), the concept of pruning using calibration data from different datasets is proposed in LLM pruning. I think it's 
+               a great idea and we need to check whether this idea actually works. 
 
 - DaSS: Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models
     - Label: <img src=https://img.shields.io/badge/semi_structured-brightgreen.svg >
@@ -505,8 +508,6 @@ There are two "Shortened LLaMa", this is a mistake of the original author!
     - Summary: This paper explores the use of Neural Architecture Search (NAS) for structural pruning of pre-trained language models to address the challenges of high GPU memory requirements and inference latency. The authors propose a multi-objective approach that identifies the Pareto optimal set of sub-networks, enabling a flexible compression process without the need for retraining. The method leverages weight-sharing NAS techniques to accelerate the search for efficient sub-networks. Empirical evaluations demonstrate that their approach outperforms baseline models in terms of efficiency and adaptability, offering a promising strategy for deploying large language models in real-world applications.
     - Note: All experiments are conducted on BERT not LLAMA. This NAS procedure requires massive computation when applying to LLaMA.
  
-- Pruning as a Domain-specific LLM Extractor
-    - Label: Should domain-specific approach be included?
  
 - Pruner-Zero: Evolving Symbolic Pruning Metric from scratch for Large Language Models
     - Label: <img src=https://img.shields.io/badge/unstructured-turquoise.svg >
